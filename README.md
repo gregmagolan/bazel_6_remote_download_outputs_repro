@@ -16,4 +16,4 @@ The output directory is not present in the sandbox when the test or binary targe
 
 ## Run repro
 
-Run `./repro.sh` to run a test that fails if the directory artifact is not present in runfiles. Removing the `--remote_download_outputs` flag -or- running with `--spawn_strategy=local` makes the test pass.
+Run `./repro.sh` to run a test that fails if the directory artifact is not present in runfiles. Removing the `--remote_download_outputs` flag -or- running with `--spawn_strategy=local` -or- removing the `--disk_cache` flag makes the test pass.
