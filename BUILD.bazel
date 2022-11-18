@@ -1,0 +1,9 @@
+load(":my_rule.bzl", "my_rule")
+my_rule(name = "out_dir")
+
+sh_test(
+  name = "out_dir_test",
+  srcs = ["out_dir_test.sh"],
+  args = ["$(rootpath :out_dir)"],
+  data = [":out_dir"],
+)

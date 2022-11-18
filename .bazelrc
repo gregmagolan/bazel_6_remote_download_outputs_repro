@@ -1,0 +1,2 @@
+build --remote_download_outputs=toplevel
+build --disk_cache=/tmp/bazel-disk-cache
