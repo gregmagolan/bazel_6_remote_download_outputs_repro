@@ -1,4 +1,4 @@
-# Repro of Bazel 6 issue
+# Repro of Bazel 6 issue https://github.com/bazelbuild/bazel/issues/16789
 
 With `--remote_download_outputs=toplevel` (or `minimal`), `remote_cache` (or `disk_cache`) & sandboxed execution, directory artifacts
 are not present in runfiles in the sandbox.
